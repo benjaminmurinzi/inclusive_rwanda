@@ -8,7 +8,9 @@ require_once 'includes/header.php';
 <section class="hero" aria-labelledby="hero-heading">
     <div class="container">
         <div class="hero-content">
-            <h2 id="hero-heading">Welcome to Inclusive Rwanda</h2>
+            <h2 id="hero-heading">
+                <span class="typing-text" id="typingText"></span>
+            </h2>
             <p class="hero-subtitle">Building an inclusive society where everyone thrives</p>
             <p class="hero-description">
                 We are dedicated to promoting disability inclusion, accessibility, 
@@ -51,5 +53,32 @@ require_once 'includes/header.php';
         <a href="<?php echo BASE_URL; ?>contact.php" class="btn btn-secondary">Contact Us</a>
     </div>
 </section>
+
+<script>
+// Typing animation for hero title only
+document.addEventListener('DOMContentLoaded', function() {
+    const typingElement = document.getElementById('typingText');
+    if (!typingElement) return;
+    
+    const text = 'Welcome to Inclusive Rwanda';
+    let charIndex = 0;
+    
+    function typeChar() {
+        if (charIndex < text.length) {
+            typingElement.textContent += text.charAt(charIndex);
+            charIndex++;
+            setTimeout(typeChar, 100); // 100ms per character (adjust for speed)
+        } else {
+            // Remove blinking cursor after typing is complete
+            setTimeout(() => {
+                typingElement.classList.add('typing-complete');
+            }, 500);
+        }
+    }
+    
+    // Start typing after a brief delay
+    setTimeout(typeChar, 500);
+});
+</script>
 
 <?php require_once 'includes/footer.php'; ?>
