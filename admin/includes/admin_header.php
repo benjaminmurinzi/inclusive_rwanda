@@ -149,10 +149,13 @@ $current_admin = getCurrentAdmin();
     <div class="admin-wrapper">
         <aside class="admin-sidebar">
             <div class="admin-sidebar-header">
+                <div style="text-align: center; margin-bottom: 1rem;">
+                    <img src="<?php echo BASE_URL; ?>assets/images/logo.png" alt="Logo" style="height: 40px; width: auto;">
+                </div>
                 <h2>Admin Panel</h2>
                 <div class="admin-user-info">
                     👤 <?php echo htmlspecialchars($current_admin['username']); ?>
-                </div>
+               </div>
             </div>
             
             <nav class="admin-nav">
@@ -161,6 +164,9 @@ $current_admin = getCurrentAdmin();
                     <li><a href="<?php echo BASE_URL; ?>admin/manage_services.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'manage_services.php' ? 'active' : ''; ?>">🛠️ Manage Services</a></li>
                     <li><a href="<?php echo BASE_URL; ?>admin/manage_partners.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'manage_partners.php' ? 'active' : ''; ?>">🤝 Manage Partners</a></li>
                     <li><a href="<?php echo BASE_URL; ?>admin/manage_news.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'manage_news.php' ? 'active' : ''; ?>">📰 Manage News</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>admin/manage_news.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'manage_news.php' ? 'active' : ''; ?>">📰 Manage News</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>admin/test_email.php" class="<?php echo basename($_SERVER['PHP_SELF']) == 'test_email.php' ? 'active' : ''; ?>">📧 Test Email</a></li>
+                    <li><a href="<?php echo BASE_URL; ?>index.php" target="_blank">🌐 View Website</a></li>
                     <li><a href="<?php echo BASE_URL; ?>index.php" target="_blank">🌐 View Website</a></li>
                 </ul>
                 

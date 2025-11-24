@@ -80,18 +80,40 @@ header {
     align-items: center;
 }
 
-.logo h1 {
-    color: white;
-    margin: 0;
-    font-size: 1.8rem;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.logo-image {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
     color: white;
 }
 
-.logo a:hover {
-    color: var(--primary-color);
+/* Hide text on small screens, show only logo */
+@media (max-width: 768px) {
+    .logo-text {
+        display: none;
+    }
+    
+    .logo-image {
+        height: 40px;
+    }
 }
 
 .nav-menu {

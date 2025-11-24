@@ -13,7 +13,8 @@
             <div class="container">
                 <div class="logo">
                     <a href="<?php echo BASE_URL; ?>index.php">
-                        <h1>Inclusive Rwanda</h1>
+                         <img src="<?php echo BASE_URL; ?>assets/images/logo.png" alt="Inclusive Rwanda Logo" class="logo-image">
+                         <span class="logo-text">Inclusive Rwanda</span>
                     </a>
                 </div>
                 <ul class="nav-menu">

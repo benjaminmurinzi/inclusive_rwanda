@@ -16,8 +16,18 @@
                 </div>
                 <div class="footer-section">
                     <h3>Contact</h3>
-                    <p>Email: info@inclusiverw.org</p>
-                    <p>Phone: +250 XXX XXX XXX</p>
+                    <p>
+                       <strong>Email:</strong><br>
+                       <a href="mailto:inclusiverwanda@gmail.com" class="footer-link">
+                       inclusiverwanda@gmail.com
+                       </a>
+                    </p>
+                    <p>
+                       <strong>Phone:</strong><br>
+                       <a href="tel:+250783778816" class="footer-link">
+                       +250 783 778 816
+                       </a>
+                    </p>
                 </div>
             </div>
             <div class="footer-bottom">
